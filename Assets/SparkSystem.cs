@@ -10,6 +10,7 @@ public class SparkSystem : MonoBehaviour
     public GameObject blueSpark;
     public GameObject feather;
     public static SparkSystem instance;
+    public bool isBlue = false;
     // Start is called before the first frame update
     void Awake()
     {
@@ -21,13 +22,25 @@ public class SparkSystem : MonoBehaviour
 
     public void genRedSpark(Vector3 pos)
     {
+        if(isBlue)
+            return;
+            
         GameObject temp = Instantiate(redSpark,pos,Quaternion.identity);
         Destroy(temp,0.5f);
     }
     public void genBlueSpark(Vector3 pos)
     {
+        StopCoroutine("blueOn");
+        StartCoroutine("blueOn");
         GameObject temp = Instantiate(blueSpark,pos,Quaternion.identity);
         Destroy(temp,0.5f);
+    }
+
+    IEnumerator blueOn()
+    {
+        isBlue = true;
+        yield return new WaitForSeconds(1f);
+        isBlue = false;
     }
     public void genFeather(Vector3 pos)
     {
