@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "192210055931",
+    "project_id": "api-project-87278672",
+    "storage_bucket": "api-project-87278672.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192210055931:android:4b154ba2a8be6f089ff65e",
+        "android_client_info": {
+          "package_name": "com.dibs.SpinningSword"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192210055931-29ge0ph7hnnf16ik9mr5h0u7m6uraghc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dibs.SpinningSword",
+            "certificate_hash": "c82749e3dda158149a2961effcb8f6ae345ac215"
+          }
+        },
+        {
+          "client_id": "192210055931-s0v2vt24n8ru2dci34m4onu4nit5f1un.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dibs.SpinningSword",
+            "certificate_hash": "c5fe35f80e2bdbd7b57e50a44475c5dce7382f86"
+          }
+        },
+        {
+          "client_id": "192210055931-t3u35bjquqh3rdp0o5s8mndg57hsgnut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAs4NhZ7KChLV7pdcQ0o3DYHZfYK_AxUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192210055931-ahlv44dutaecdlmh8196dovvlkoh83ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
