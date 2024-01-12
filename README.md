@@ -1,11 +1,13 @@
 # SpinningSword 스피닝소드
-### [스피닝소드 구글 플레이스토어](https://play.google.com/store/apps/details?id=com.dibs.SpinningSword)
+### [웹에서 플레이 해보기](https://falcon5077.github.io/WebglTest/SpinningSword/)
+### [스피닝소드 구글 플레이스토어](https://play.google.com/store/apps/details?id=com.dibs.SpinningSword) 
 <img alt="image" src="https://github.com/Falcon5077/SpinningSword/assets/32628758/5176a317-a999-43a2-8302-c546db73606f" width="25%" height="25%">
 
 킬링타임용 하이퍼캐쥬얼 게임입니다. <br>
 플래피버드 제작자는 사람들의 시간을 너무 많이 뺏어서 후회했다고 합니다.
 
-저도 만든걸 후회할만큼 재밌는 게임을 만들고 싶었고 기획한 만큼 덜 만들어졌기 때문에 지속적으로 업데이트 하겠습니다.  감사합니다.
+저도 만든걸 후회할만큼 재밌는 게임을 만들고 싶었습니다. <br>
+아직 기획한 만큼 덜 만들어졌기 때문에 지속적으로 업데이트 하겠습니다.  감사합니다.
 
 ---
 
