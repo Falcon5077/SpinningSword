@@ -21,6 +21,7 @@ public class SwordFly : MonoBehaviour
     public GameObject KnifeImg_2;
     public GameObject SkinBtn;
     public GameObject scoreText;
+    public RectTransform[] titleText;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,13 +37,16 @@ public class SwordFly : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    public static int number = 0;
+    public TextMeshProUGUI numberText;
     // Update is called once per frame
     void Update()
-    {
+    {  
         if(gameEnd)
             return;
             
         if(Input.GetMouseButtonDown(0)){
+
             if(UIManager.isPause) return;
             if(EventSystem.current.IsPointerOverGameObject()) return;
             
@@ -54,18 +58,18 @@ public class SwordFly : MonoBehaviour
                 gameStart = true;
 
                 Vector2 endPos = new Vector2(-145,1550);
-                
-                Transform[] titleText  = Title.GetComponentsInChildren<Transform>();
+
+
                 Title.GetComponent<RectTransform>().DOAnchorPos(endPos,1f,false).SetEase(Ease.OutSine);
 
                 endPos = new Vector2(0,-1000);
-                //TapImg.GetComponent<RectTransform>().DOAnchorPos(endPos,1f,false).SetEase(Ease.OutSine);
+                // //TapImg.GetComponent<RectTransform>().DOAnchorPos(endPos,1f,false).SetEase(Ease.OutSine);
 
                 for(int i = 0; i < titleText.Length; i++)
                 {
                     titleText[i].GetComponent<TextMeshProUGUI>().DOColor(new Color(1,1,1,0),time).SetEase(Ease.OutSine);
                 }
-
+                
                 TapImg.GetComponent<Image>().DOColor(new Color(1,1,1,0),time).SetEase(Ease.OutSine);
                 KnifeImg.GetComponent<Image>().DOColor(new Color(1,1,1,0),time).SetEase(Ease.OutSine);
                 KnifeImg_2.GetComponent<Image>().DOColor(new Color(1,1,1,0),time).SetEase(Ease.OutSine);

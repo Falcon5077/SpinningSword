@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Replay : MonoBehaviour
 {
+    [SerializeField] private string SceneName;
     public void ReplayGame(){
-        SceneManager.LoadScene("PlayScene");
+        SceneManager.LoadScene(SceneName);
     }
 }
